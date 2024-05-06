@@ -1,7 +1,7 @@
-import { js } from "laravel-mix";
-import { DefinePlugin } from "webpack";
+const mix = require("laravel-mix");
+const { DefinePlugin } = require("webpack");
 
-js("resources/js/app.js", "public/js")
+mix.js("resources/js/app.js", "public/js")
     .webpackConfig({
         resolve: {
             alias: {
