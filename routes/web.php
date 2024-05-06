@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Define a route that serves the Vue application's entry point
 Route::get('/{any}', function () {
-      return view('welcome');
+    return view('welcome');
 })->where('any', '.*');
+
+  
+date_default_timezone_set('Asia/Manila');
